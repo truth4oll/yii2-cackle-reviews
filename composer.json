@@ -1,0 +1,22 @@
+{
+    "name": "evgenybukharev/yii2-cackle-reviews",
+    "description": "yii2-cackle-reviews extension ",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," reviews"," cackle"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "evgenybukharev",
+            "email": "bukharev.evgeny@ya.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "evgenybukharev\\cackle-reviews\\": ""
+        }
+    }
+}
