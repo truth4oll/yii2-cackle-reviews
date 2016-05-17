@@ -2,6 +2,7 @@
 
 namespace evgenybukharev\yii2_cackle_reviews;
 
+use Yii;
 
 class Module extends \yii\base\Module
 {

@@ -15,7 +15,7 @@ class m160516_191906_cackle_reviews extends Migration
 
         $this->createTable('{{%reviews}}', [
             'id' => $this->primaryKey(),
-            'cackle_id' => $this->integer(11),
+            'cackle_id' => $this->integer(11)->unique(),
             'siteId' => $this->integer(11),
             'star' => $this->integer(11),
             'pros' => $this->text()->notNull(),
@@ -29,6 +29,8 @@ class m160516_191906_cackle_reviews extends Migration
             'details' => $this->text()->notNull(),
             'author_id' => $this->integer(11),
             'author_name' => $this->text()->notNull(),
+            'author_email' => $this->text()->notNull(),
+            'author_hash' => $this->text()->notNull(),
             'author_avatar' => $this->text()->notNull(),
             'author_www' => $this->text()->notNull(),
             'author_provider' => $this->text()->notNull(),

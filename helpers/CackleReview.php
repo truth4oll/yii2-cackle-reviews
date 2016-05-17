@@ -80,6 +80,7 @@ class CackleReview extends Widget
             = <<<JS
             document.getElementById('mc-review').innerHTML = '';
             cackle_widget = window.cackle_widget || [];
+
             cackle_widget.push({
                 widget: 'Review',
                 chanWithoutParams: true,
