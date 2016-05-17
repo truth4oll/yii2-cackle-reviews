@@ -24,14 +24,14 @@ yii2-cackle-reviews
 4. Настройте модуль в конфигурационном файле
     ```php
     'modules' => [
-            'cackle-reviews' => [
-                'class' => evgenybukharev\yii2-cackle-reviews\Module::className(),
-                'siteId' => YOUR_ID,
-                'accountAPIKey' => 'YOUR_KEY',
-                'siteAPIKey' => 'YOUR_KEY',
+            'cackle_reviews' => [
+                'class' => 'evgenybukharev\yii2_cackle_reviews\Module',
+                'site_id' => 'YOUR_ID',
+                'account_api_key' => 'YOUR_KEY',
+                'site_api_key' => 'YOUR_KEY',
             ],
         ],
     ```
-С более подробной информацией, как получить `accountAPIKey` и `siteAPIKey` Вы можете ознакомиться на странице [http://cackle.me/help/review-import]
+С более подробной информацией, как получить `account_api_key` и `site_api_key` Вы можете ознакомиться на странице [http://cackle.me/help/review-import]
 
 Профит!
