@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "evgenybukharev\\yii2-cackle-reviews\\": ""
+            "evgenybukharev\\yii2_cackle_reviews\\": ""
         }
     }
 }
