@@ -3,7 +3,7 @@ yii2-cackle-reviews
 
 Установка
 -------------
-1. Добавьте yii2-cackle-reviews в секцию require файла composer.json проекта:
+1. Добавьте "yii2-cackle-reviews" в секцию "require" файла composer.json вашего проекта:
     <pre>
        {
             "require": {
@@ -11,7 +11,7 @@ yii2-cackle-reviews
             }
        }
     </pre>
-2. Запустите обновление енеджера пакетов 
+2. Запустите обновление менеджера пакетов 
     <pre>
       php composer.phar update
     </pre>
