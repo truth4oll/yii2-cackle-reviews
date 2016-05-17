@@ -19,8 +19,9 @@ modules => [
             ],
 ]
 ```
-Более подробную информацию, как получить `accountAPIKey` и `siteAPIKey` Вы можете получить на странице [http://cackle.ru/help/comment-sync]
-Выполните миграцию:
+С более подробной информацией, как получить `accountAPIKey` и `siteAPIKey` Вы можете ознакомиться на странице [http://cackle.me/help/review-import]
+
+Миграция
 ```
 php yii mgrate/up --migrationPath="@vendor/evgenybukharev/yii2-cackle-reviews/migrations"
 ```
