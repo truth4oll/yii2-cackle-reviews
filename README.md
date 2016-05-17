@@ -11,7 +11,7 @@ yii2-cackle-reviews
 Добавьте в конфигурационный файл вашего приложения:
 ```
 modules => [
-    'cackle' => [
+    'cackle-reviews' => [
                 'class' => evgenybukharev\yii2-cackle-reviews\Module::className(),
                 'siteId' => YOUR_ID,
                 'accountAPIKey' => 'YOUR_KEY',
