@@ -3,7 +3,7 @@
 namespace evgenybukharev\yii2_cackle_reviews;
 
 
-class CackleReview extends \yii\base\Widget
+class CackleReviewWidget extends \yii\base\Widget
 {
 
     public function init()
