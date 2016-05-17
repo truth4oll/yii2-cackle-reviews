@@ -10,6 +10,7 @@
             "email": "bukharev.evgeny@ya.ru"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "*"
     },
