@@ -41,7 +41,7 @@ class CackleReviewWidget extends \yii\base\Widget
         $this->params['chanWithoutParams']=true;
         $this->params['container']='mc-review-'.$this->_uid;
 
-        $js= 'cackle_widget.push('.Json::encode($this->params).');';;
+        $js= 'cackle_widget.push('.Json::encode($this->params).');';
         $cackle_pos_end  = 'document.getElementById("mc-review-'.$this->_uid.'").innerHTML = "";';
         $cackle_pos_end .= 'cackle_widget = window.cackle_widget || [];';
         $cackle_pos_end .= "
