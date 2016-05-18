@@ -25,7 +25,7 @@ class m160516_191906_cackle_reviews extends Migration
             'up' => $this->integer(11),
             'down' => $this->integer(11),
             'created' => $this->dateTime()->notNull(),
-            'status' => $this->integer(11),
+            'status' => $this->text()->notNull(),
             'details' => $this->text()->notNull(),
             'author_id' => $this->integer(11),
             'author_name' => $this->text()->notNull(),
@@ -47,7 +47,6 @@ class m160516_191906_cackle_reviews extends Migration
             'lack' => $this->text()->notNull(),
             'dignity' => $this->text()->notNull(),
             'stars' => $this->integer(11),
-            'channel' => $this->text()->notNull()->defaultValue(''),
         ], $tableOptions);
     }
 

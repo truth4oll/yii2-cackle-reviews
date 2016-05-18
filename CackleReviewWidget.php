@@ -77,9 +77,9 @@ class CackleReviewWidget extends \yii\base\Widget
      */
     function list_reviews()
     {
-        $cackle_api = new helpers\CackleReviewAPI();
+        $sync = new helpers\CackleReviewSync();
         $channel = $this->params['channel'];
-        $reviews = $cackle_api->db_connect("select * from " . PREFIX . "_reviews where channel = '$channel' and status = 0;");
+        $reviews = $sync->getLocalReviews($channel);
 
         for ($i = 0; $i < count($reviews); $i++)
             $this->render_review($reviews[$i]);
@@ -103,9 +103,9 @@ class CackleReviewWidget extends \yii\base\Widget
         echo Html::endTag('div');
 
         echo Html::beginTag('div', ['id' => 'cackle-review-body-' . $review['id'], 'class' => 'cackle-review-body']);
+        echo Html::tag('div', $review['pros'], ['id' => 'cackle-review-message-' . $review['id'], 'class' => 'cackle-review-message']);
+        echo Html::tag('div', $review['cons'], ['id' => 'cackle-review-message-' . $review['id'], 'class' => 'cackle-review-message']);
         echo Html::tag('div', $review['comment'], ['id' => 'cackle-review-message-' . $review['id'], 'class' => 'cackle-review-message']);
-        echo Html::tag('div', $review['dignity'], ['id' => 'cackle-review-message-' . $review['id'], 'class' => 'cackle-review-message']);
-        echo Html::tag('div', $review['lack'], ['id' => 'cackle-review-message-' . $review['id'], 'class' => 'cackle-review-message']);
         echo Html::endTag('div');
 
         echo Html::endTag('li');

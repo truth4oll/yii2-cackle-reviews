@@ -40,7 +40,6 @@ use Yii;
  * @property string $lack
  * @property string $dignity
  * @property integer $stars
- * @property string $channel
  */
 class Reviews extends \yii\db\ActiveRecord
 {
@@ -58,9 +57,9 @@ class Reviews extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['cackle_id', 'siteId', 'star', 'up', 'down', 'status', 'author_id', 'chan_id', 'rating', 'stars'], 'integer'],
-            [['pros', 'cons', 'comment', 'media', 'created', 'details', 'author_name', 'author_email', 'author_hash', 'author_avatar', 'author_www', 'author_provider', 'author_openId', 'author_verify', 'author_notify', 'chan_channel', 'chan_url', 'chan_title', 'ip', 'lack', 'dignity', 'channel'], 'required'],
-            [['pros', 'cons', 'comment', 'media', 'details', 'author_name', 'author_email', 'author_hash', 'author_avatar', 'author_www', 'author_provider', 'author_openId', 'author_verify', 'author_notify', 'chan_channel', 'chan_url', 'chan_title', 'lack', 'dignity', 'channel'], 'string'],
+            [['cackle_id', 'siteId', 'star', 'up', 'down', 'author_id', 'chan_id', 'rating', 'stars'], 'integer'],
+            [['pros', 'cons', 'comment', 'media', 'created', 'details', 'author_name', 'author_email', 'author_hash', 'author_avatar', 'author_www', 'author_provider', 'author_openId', 'author_verify', 'author_notify', 'chan_channel', 'chan_url', 'chan_title', 'ip', 'lack', 'dignity'], 'required'],
+            [['pros', 'cons', 'status', 'comment', 'media', 'details', 'author_name', 'author_email', 'author_hash', 'author_avatar', 'author_www', 'author_provider', 'author_openId', 'author_verify', 'author_notify', 'chan_channel', 'chan_url', 'chan_title', 'lack', 'dignity'], 'string'],
             [['created', 'modified'], 'safe'],
             [['ip'], 'string', 'max' => 500],
         ];
@@ -105,7 +104,6 @@ class Reviews extends \yii\db\ActiveRecord
             'lack' => 'Lack',
             'dignity' => 'Dignity',
             'stars' => 'Stars',
-            'channel' => 'Channel',
         ];
     }
 }
