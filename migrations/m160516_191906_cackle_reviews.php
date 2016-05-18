@@ -27,6 +27,7 @@ class m160516_191906_cackle_reviews extends Migration
             'created' => $this->dateTime()->notNull(),
             'status' => $this->text()->notNull(),
             'details' => $this->text()->notNull(),
+            'recom' => $this->integer(11),
             'author_id' => $this->integer(11),
             'author_name' => $this->text()->notNull(),
             'author_email' => $this->text()->notNull(),

@@ -34,4 +34,13 @@ yii2-cackle-reviews
     ```
 С более подробной информацией, как получить `account_api_key` и `site_api_key` Вы можете ознакомиться на странице [http://cackle.me/help/review-import]
 
+5. Вызов виджета
+   ```php
+    echo CackleReviewWidget::widget([
+        'sync' => true,
+        'params' => [
+            'channel' => 'your_product_id',
+        ]
+    ]);
+    ```
 Профит!

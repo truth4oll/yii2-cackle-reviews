@@ -70,7 +70,9 @@ class CackleReviewSync
             $set_str_params = ArrayHelper::merge($set_str_params, $this->prepareData($data[$i], true));
             $sql .= "INSERT INTO " . Reviews::tableName() . " SET $set_str ON DUPLICATE KEY UPDATE $set_str;";
         }
-        return Yii::$app->db->createCommand($sql)->bindValues($set_str_params)->execute();
+        Yii::$app->db->createCommand($sql)->bindValues($set_str_params)->execute();
+
+        return true;
     }
 
     /**
